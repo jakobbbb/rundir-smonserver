@@ -1,3 +1,9 @@
+# SMonServerPub
+
+Single-User Smartr-Efficiency Rundir based on SMonServer that can be run entirely from publically available software.
+
+Will be moved into smartrplace/smartr-efficiency in the future.
+
 # Build and Start Instructions
 
 ## Running the single user rundir
