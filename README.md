@@ -21,52 +21,43 @@ For development, you'll likely want to set up an OGEMA development
 environment and build the relevant projects from source.
 
 Requirements:
-* OGEMA SDK
-    * Download and install the SDK as described [here](https://community.ogema-source.net/xwiki/bin/view/Main/)
-* Git
-    * see [Basic development collaboration with Git and Eclipse](https://community.ogema-source.net/xwiki/bin/view/Tutorial%20Collection/SDK%20Tutorial%20Overview%20Experimental/Basic%20development%20collaboration%20with%20Git%20and%20Eclipse/)
+* Git. For an introduction into Git, check [Basic development collaboration with Git and Eclipse](https://community.ogema-source.net/xwiki/bin/view/Tutorial%20Collection/SDK%20Tutorial%20Overview%20Experimental/Basic%20development%20collaboration%20with%20Git%20and%20Eclipse/) on the OGEMA Wiki.
+* JDK >= 7
+* Maven
+
+It is recommended to use the [OGEMA SDK](https://community.ogema-source.net/xwiki/bin/view/Main/Download) but you can choose any IDE, if you so desire.
 
 ### Building `smartr-efficiency`
 
 You need to build and install the following projects from source in
-order to build `smartr-efficiency`:
+order to build [`smartr-efficiency`](https://github.com/smartrplace/smartr-efficiency):
 
-* [api-draft](https://github.com/smartrplace/api-draft)
-* [ogema-widgets-extended](https://github.com/ogema/ogema-widgets-extended)
-    * Before building, make sure to check out the `OGEMA_2.2.0` tag.
-        * Eclipse: Right click ogema-widgets-extended in the "Git
-          Repositories" view, click "Switch To" > "Other...", select the
-          tag under "Tags" and hit "Check Out".
-        * Bash: run `git checkout OGEMA_2.2.0` while in the
-          `ogema-widgets-extended` directory.
-    * Note that `ogema-widgets-extended` must be build with the
-      `--fail-at-end` option.  This is nessecary because parts of
-      `ogema-widgets-extended` have unpublished dependencies.  The
-      "Reactor Summary" sould show 2 FAILURES and 6 SUCCESSES.  The two
-      failing projects are not relevant for `smartr-efficiency`.
+* [`api-draft`](https://github.com/smartrplace/api-draft)
+* [`ogema-widgets-extended`](https://github.com/ogema/ogema-widgets-extended)
 
 Now, you should be able to build `smartr-efficiency` itself.
 
 
 ### Other dependencies of the Rundir
 
+If you want to build this entire Rundir from source, you need to build the following projects:
 
-* [fendodb](https://github.com/smartrplace/fendodb)
+* [`fendodb`](https://github.com/smartrplace/fendodb)
     * Note that, as described the README, `fendodb` should be
       built with the `-DskipTests` option.
-* [ogema-backup-parser](https://github.com/smartrplace/ogema-backup-parser)
-* timeseries-multieval-garo-jaxb-fendodb
-    * Contained in the `ogema-widgets` repository in
-    `src/timeseries-tools` but needs to be built separately.
+* [`ogema-backup-parser`](https://github.com/smartrplace/ogema-backup-parser)
+* `timeseries-multieval-garo-jaxb-fendodb`
+    * Contained in the [`ogema-widgets`](https://github.com/ogema/ogema-widgets) repository under
+    `src/timeseries-tools/timeseries-multieval-garo-jaxb-fendodb` but needs to be built separately.
     * Change the following dependencies:
-        * fendodb-source: 0.0.4-SNAPSHOT --> 0.1.1-SNAPSHOT
-        * backup-gateways-analysis: 0.0.2-SNAPSHOT --> 0.0.3-SNAPSHOT
+        * `fendodb-source`: `0.0.4-SNAPSHOT` → `0.1.1-SNAPSHOT`
+        * `backup-gateways-analysis`: `0.0.2-SNAPSHOT` → `0.0.3-SNAPSHOT`
 
 At this point, you should be able to build the SMonServerPub Rundir.
 
 ### Other repositories you may wish to build
 
-* [ogema](https://github.com/ogema/ogema)
+* [`ogema`](https://github.com/ogema/ogema)
     * Before building, make sure to check out the `9dbac682` commit.
         * Bash: run `git checkout 9dbac682` while in the
           `ogema-widgets-extended` directory.
@@ -79,6 +70,6 @@ At this point, you should be able to build the SMonServerPub Rundir.
             * Right click `9dbac68` *OGEMA 2.2.0 public release*
     * Note that, as described in OGEMA's README, OGEMA must be
       built with the `-DskipTests` option.
-* [ogema-widgets](https://github.com/ogema/ogema-widgets)
+* [`ogema-widgets`](https://github.com/ogema/ogema-widgets)
     * Note that, as described the README, `ogema-widgets` must be
       built with the `-DskipTests` option.
