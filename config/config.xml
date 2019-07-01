@@ -203,7 +203,7 @@
 		<!-- optional widget bundles -->
 		<bundle dir="bin/widgets" groupId="org.ogema.model" artifactId="widget-models-proposed" version="&widgets-version;" startLevel="14" />
 		<bundle dir="bin/widgets" groupId="org.ogema.widgets" artifactId="util-extended" version="&widgets-version;" startLevel="14" />
-		<bundle dir="bin/widgets" groupId="org.ogema.widgets" artifactId="util-extended-plus" version="&widgets-version;" startLevel="14" />
+        <!-- <bundle dir="bin/widgets" groupId="org.ogema.widgets" artifactId="util-extended-plus" version="&widgets-version;" startLevel="14" /> -->
 	
 		<!-- two alternative tools for resource imports... only relevant for debugging, not in productive systems -->
 		<bundle dir="bin/tools" groupId="org.ogema.tools" artifactId="ogema-fileinstall" version="2.1.3" startLevel="15"/>
@@ -245,7 +245,7 @@
 		<bundle dir="bin/tools" groupId="org.ogema.tools" artifactId="resource-tree-manipulator" version="&widgets-version;" startLevel="20"/>
 		<!-- different schedule viewer versions - choose one or keep them all -->
 <!--		<bundle dir="bin/apps" groupId="de.iwes.tools" artifactId="eval-schedule-viewer" version="&widgets-version;" startLevel="20"/> --> <!-- needs timeseries-eval-base and aggregation  -->
-		<bundle dir="bin/tools/trusted" groupId="de.iwes.tools" artifactId="schedule-viewer" version="&widgets-iwes-version;" startLevel="20"/> 
+        <!-- <bundle dir="bin/tools/trusted" groupId="de.iwes.tools" artifactId="schedule-viewer" version="&widgets-iwes-version;" startLevel="20"/> -->
 		<bundle dir="bin/tools" groupId="org.ogema.tools" artifactId="schedule-viewer-basic" version="&widgets-version;" startLevel="20"/>
 		<bundle dir="bin/tools" groupId="org.ogema.tools" artifactId="standard-patterns" version="&widgets-version;" startLevel="20"/>
 
@@ -300,9 +300,9 @@
 -->
 		<!-- OGEMA Applications -->
 		 <!-- Widget Apps see ogema-apps/src/widgets/widget-apps -->
-		<bundle dir="bin/apps" groupId="de.iwes.apps" artifactId="datalog-configgui" version="&widgets-version;" startLevel="30" />
+         <!-- <bundle dir="bin/apps" groupId="de.iwes.apps" artifactId="datalog-configgui" version="&widgets-version;" startLevel="30" /> -->
 
-		<bundle dir="bin/smartrplace" groupId="org.smartrplace.apps" artifactId="smartrplace-util" version="&smartrplace-version;" startLevel="30" />
+         <!-- <bundle dir="bin/smartrplace" groupId="org.smartrplace.apps" artifactId="smartrplace-util" version="&smartrplace-version;" startLevel="30" /> -->
 		<bundle dir="bin/smartrplace" groupId="org.smartrplace.apps" artifactId="smartrplace-util-proposed" version="&smartrplace-beta-version;" startLevel="30" />
 		<bundle dir="bin/ogema" groupId="org.ogema.model" artifactId="smartrplace-proposed" version="&proposed-version;" startLevel="10"/>
 <!-- 	    <bundle dir="bin/widgets" groupId="org.smartrplace.internal" artifactId="backup-install-v2" version="1.0.0-SNAPSHOT" startLevel="30" />
@@ -389,7 +389,7 @@
         <bundle dir="bin/eval" groupId="org.ogema.eval" artifactId="timeseries-heating-analysis-multi" version="&widgets-version;" startLevel="30" />   
   		<bundle dir="bin/eval" groupId="de.iwes.apps" artifactId="timeseries-teststarter" version="&widgets-version;" startLevel="30" />
   -->
-        <bundle dir="bin/eval" groupId="org.ogema.eval" artifactId="server-resource-source" version="&widgets-version;" startLevel="30" />  
+        <!-- <bundle dir="bin/eval" groupId="org.ogema.eval" artifactId="server-resource-source" version="&widgets-version;" startLevel="30" />  -->
         <!-- <bundle dir="bin/eval" groupId="org.ogema.eval" artifactId="server-timeseries-source" version="&widgets-version;" startLevel="30" />    
  		-->
 <!-- not found -->
@@ -401,7 +401,7 @@
   		<bundle dir="bin/apps" groupId="org.ogema.eval.tools" artifactId="util-extended-eval" version="&proposed-version;" startLevel="30" />
 		<bundle dir="bin/apps" groupId="com.example.app" artifactId="evaluation-offline-control" version="&proposed-version;" startLevel="30" />
         <bundle dir="bin/eval" groupId="org.smartrplace.eval" artifactId="timeseries-quality-analysis" version="&smartrplace-beta-version;" startLevel="30" />   
-		<bundle dir="bin/eval" groupId="org.smartrplace.eval" artifactId="timeseries-humidity" version="&smartrplace-version;" startLevel="30" />
+        <!--<bundle dir="bin/eval" groupId="org.smartrplace.eval" artifactId="timeseries-humidity" version="&smartrplace-version;" startLevel="30" />-->
  		
  		<!--  SmartrEfficiency -->
  		<bundle dir="bin/apps" groupId="org.smartrplace.api" artifactId="smartr-domain-extension-api" version="&smartrplace-version;" startLevel="30" />
